@@ -9,3 +9,6 @@ INSTALL
 EXECUTE
 devmon --exec-on-disc "devmonripblueray.sh %d %f %l" --exec-on-video "devmonripdvd.sh %d %f %l"
 
+The system will then rip the blueray or DVD depending on the disc type and automatically eject the disc on completion or error. There is a .log file in the title's directory that you can "tail -f" to monitor the progress of individual movies. 
+
+Be warned:  Each Blueray requires approximately 500MB of RAM.  DVDs do not require RAM, but should be loaded at approximately the same time since they may cause SATA bus resets and may interfere with each other.  
